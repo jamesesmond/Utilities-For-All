@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName =("My Assets/Simple Audio Event"))]
 public class SimpleAudioEvent : AudioEvent
 {
+    //https://www.youtube.com/watch?v=6vmRwLYWNRo&t=3s
+
     public AudioClip[] clips;
 
     [Header("Volume Range")]
