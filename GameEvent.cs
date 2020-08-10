@@ -6,6 +6,7 @@ public class GameEvent : ScriptableObject
 {
     /// <summary>
     /// The list of listeners that this event will notify if it is raised.
+    /// https://github.com/roboryantron/Unite2017
     /// </summary>
     private readonly List<GameEventListener> eventListeners =
         new List<GameEventListener>();
