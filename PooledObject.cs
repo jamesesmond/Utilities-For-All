@@ -2,23 +2,14 @@
 
 public class PooledObject : MonoBehaviour
 {
-    private GameObjectPool pool;
-
-    public void Create(GameObjectPool newPool)
-    {
-        pool = newPool;
-    }
-
-    public void OnDespawn()
-    {
-        pool.ReturnToPool(this);
-    }
+    public GameObjectPool pool;
+    
     private void OnDestroy()
     {
         pool.RemoveObject(this);
     }
     private void OnDisable()
     {
-        OnDespawn();
+        pool.ReturnToPool(this);
     }
 }
